@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(240, 240, 240);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    border-radius: 20px;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    background-color: #fefbfb;
+}
+
+thead {
+    background-color: #060606;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+/* Define um estilo para a div "formulario" */
+
+form.formulario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 30px 0;
+    background-color: #fefbfb;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+}
+
+.form1 {
+    width: 20%;
+    margin-left: 150px;
+}
+
+.form2 {
+    width: 20%;
+}
+
+.form3 {
+    width: 20%;
+    margin-right: 150px;
+}
+
+
+/* Define um estilo para os rótulos do formulário */
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+/* Define um estilo para os campos do formulário */
+
+.form1 input,
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.form2 input,
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.form3 input,
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+
+/* Define um estilo para o botão "Enviar" */
+
+button[type="submit"] {
+    background-color: #FF8D42;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: blue;
+}
+
+
+/* Estilos para telas menores que 768px */
+
+@media screen and (max-width: 768px) {
+    .formulario {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .form1,
+    .form2,
+    .form3 {
+        width: 100%;
+        margin: 0;
+    }
+}
